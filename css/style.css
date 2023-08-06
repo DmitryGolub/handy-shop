@@ -8,95 +8,235 @@
     text-decoration: none;
 }
 
-
-body{
-    height: 100vh;
-    background: #E84545;
-    background-size: cover;
-    background-position: center;
+.container {
+    max-width: 1210px;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
-header .logo{
+del {
+    text-decoration: line-through;
+}
+
+.red {
+    color: red;
+}
+
+
+/* ----------------- header ------------------- */
+
+.header {
+    height: 80px;
+    background: #243763;
+}
+
+.header .logo{
     color: #fff;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 600;
+    animation: slideRight 1s ease forwards;
 }
 
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-    background: #2B2E4A;
+.header-inner {
+    height: 100%;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
-    padding: 0 3%;
+    align-items: center;
 }
 
-
-
-header .navbar ul li {
+.navbar-link {
+    display: block;
+    opacity: 0;
+    color: #d4d4d4;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 25px;
     position: relative;
-    float: left;
+    transition: .3s ease;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
-
-header .navbar ul li a{
-    padding: 25px;
-    color: #fff;
-    /* display: block; */
-}
-
-
-.navbar a::after{
+.navbar-link::after{
     content: "";
     position: absolute;
-    left: 30px;
-    width: 50%;
+    left: 0px;
+    width: 100%;
     height: 2px;
-    background: #fff;
-    bottom: -5px;
+    background: #ffffff;
+    bottom: -10px;
     border-radius: 5px;
     transform: translateY(10px);
     opacity: 0;
-    transition: .5s ease;
+    transition: .3s ease;
 }
 
 
-.navbar a:hover:after{
+.navbar-link:hover:after{
     transform: translateY(0);
     opacity: 1;
 }
 
-.text-item{
-    display: block;
-    position: absolute;
-    width: 58%;
-    height: 0;
+.navbar-link:hover {
     color: #fff;
-    background: transparent;
-    padding: 330px;
+    transition: .3s ease;
+}
+
+
+/* ---------------- home ------------------- */
+
+.home {
+    background-color: #FF6E31;
+}
+
+.home-inner {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    margin-top: 118px;
-    margin-left: -230px;
+    align-items: center;
+    padding: 60px 0;
 }
 
-
-.text-item h2{
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 77.45px;
+.home_img img{
+    opacity: 0;
+    max-width: 550px;
+    max-height: 550px;
+    animation: zoomIn 1s ease forwards, floatImage 3.5s ease-in-out infinite;
+    animation-delay: 2s, 3s;
 }
 
-.text-item p{
+.home_title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #fff;
+    animation: slideTop 1s ease forwards;
+    opacity: 0;
+    animation-delay: .7s;
+}
+
+.home_text {
     font-size: 16px;
-    font-weight: 400;
-    margin: 30px 0;
-    line-height: 19.36px;
+    line-height: 20px;
+    max-width: 345px;
+    margin-bottom: 35px;
+    color: #fff;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .8s;
+}
 
-    
+.home_link {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 11px 26px;
+    border-radius: 10px;
+    color: #fff;
+    opacity: 0;
+    transition: .3s ease;
+    font-weight: 500;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 1.1s
+} 
+
+.home_link:hover {
+    background: #fff;
+    transition: .3s ease;
+    color: #FF6E31;
+}
+
+/* ------------ about ---------------------- */
+
+.about {
+    padding: 160px 0;
+}
+
+.about_title {
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.about_subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about_price {
+    font-size: 24px;
+}
+
+.about_text {
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+
+/* -------- ANIMATION ------------- */
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0)
+    }
 }

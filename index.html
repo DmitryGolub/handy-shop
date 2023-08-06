@@ -4,32 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handy Shop</title>
-    <link rel="stylesheet" href="dropshopping.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="Handy Shop.png" type="image/ico"/>
 </head>
 <body>
 
 <header class="header">
-
-    <h1 class="logo">Handy Shop</h1>
-
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">О товаре</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="#">Заказать</a></li>
-            </ul>
-        </nav>
+    <div class="container">
+        <div class="header-inner">
+            <h2 class="logo">Handy Shop</h2>
+            <nav class="navbar">
+                <a class="navbar-link" href="#" style="--i:1;">О товаре</a>
+                <a class="navbar-link" href="#" style="--i:2;">Отзывы</a>
+                <a class="navbar-link" href="#" style="--i:3;">Заказать</a>
+            </nav>
+        </div>
+    </div>
 </header>
 
-    <section class="menu">
-
-        <div class="text-item">
-            <h2>ПУШИСТЫЙ АВОКАДО</h2>
-                <p>Мягкая игрушка Авокадо – очень модная и популярная игрушка как среди детей, так и среди взрослых. Она выполнена в виде экзотического фрукта авокадо со шкуркой, мякотью, веточкой и косточкой, с забавной улыбающейся лицом с блестящими глазами и розовыми щечками. Забавная мягкая и пушистая игрушка в форме Авокадо станет отличным подарком для вашего малыша. Интересный дизайн и яркие цвета никого не оставят равнодушным.</p>
+<section class="home">
+    <div class="container">
+        <div class="home-inner">
+            <div class="home_content">
+                <h1 class="home_title">МЯГКАЯ ИГРУШКА АВОКАДО</h1>
+                <p class="home_text">Забавная мягкая и пушистая игрушка в форме Авокадо станет отличным подарком для малыша</p>
+                <a class="home_link" href="#">Заказать</a>
+            </div>
+            <div class="home_img">
+                <img src="images/home-img.png" alt="тут должна была быть картинка с авокадо">
+            </div>
         </div>
-        
-    </section>
+    </div>
+    
+</section>
+
+<section class="about">
+    <div class="container">
+        <h3 class="about_title">О товаре</h3>
+        <div class="about-inner">
+            <div class="about_content">
+                <h4 class="about_subtitle">Мягкая игрушка авокадо</h4>
+                <p class="about_text">Мягкое, милое, нежное плюшевое авокадо можно использовать в качестве подушки, украшения для дивана или же просто как игрушку для ребёнка. Игрушка очень приятна на ощупь. Этот тропический плюшевый фрукт быстро станет вашим новым любимым другом! Он идеально подходит для обнимашек и вы не захотите его выпускать из своих объятий!</p>
+                <h4 class="about_subtitle">Характеристики и стоимость</h4>
+                <ul>
+                    <li><span class="about_price">20 см - <span class="red">870руб.</span> <del>1000руб</del></span></li>
+                    <li><span class="about_price">20 см - <span class="red">870руб.</span> <del>1000руб</del></span></li>
+                    <li><span class="about_price">20 см - <span class="red">870руб.</span> <del>1000руб</del></span></li>
+                    <li><span class="about_price">20 см - <span class="red">870руб.</span> <del>1000руб</del></span></li>
+                    <li><span class="about_price">20 см - <span class="red">870руб.</span> <del>1000руб</del></span></li>
+                </ul>
+            </div>
+            <div class="about_slider"></div>
+        </div>
+    </div>
+</section>
 
 </body>
 </html>
