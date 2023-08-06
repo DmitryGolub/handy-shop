@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body{
+    height: 100vh;
+    background: #E84545;
+    background-size: cover;
+    background-position: center;
+}
+
+header .logo{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: #2B2E4A;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3%;
+}
+
+
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+
+header .navbar ul li a{
+    padding: 25px;
+    color: #fff;
+    /* display: block; */
+}
+
+
+.navbar a::after{
+    content: "";
+    position: absolute;
+    left: 30px;
+    width: 50%;
+    height: 2px;
+    background: #fff;
+    bottom: -5px;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s ease;
+}
+
+
+.navbar a:hover:after{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.text-item{
+    display: block;
+    position: absolute;
+    width: 58%;
+    height: 0;
+    color: #fff;
+    background: transparent;
+    padding: 330px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 118px;
+    margin-left: -230px;
+}
+
+
+.text-item h2{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77.45px;
+}
+
+.text-item p{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 30px 0;
+    line-height: 19.36px;
+
+    
+}
