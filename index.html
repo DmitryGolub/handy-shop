@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handy Shop</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="Handy Shop.png" type="image/ico"/>
 </head>
 <body>
 
@@ -28,6 +29,13 @@
             <div class="home_content">
                 <h1 class="home_title">МЯГКАЯ ИГРУШКА АВОКАДО</h1>
                 <p class="home_text">Забавная мягкая и пушистая игрушка в форме Авокадо станет отличным подарком для малыша</p>
+                <div class="home_share">
+                    <a href="#" class="home_share-item" style="--i:5;"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="home_share-item" style="--i:4;"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" class="home_share-item" style="--i:3;"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="#" class="home_share-item" style="--i:2;"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#" class="home_share-item" style="--i:1;"><i class='bx bxl-vk' ></i></a>
+                </div>
                 <a class="home_link" href="#">Заказать</a>
             </div>
             <div class="home_img">
@@ -45,8 +53,8 @@
             <div class="about_content">
                 <h4 class="about_subtitle">Мягкая игрушка авокадо</h4>
                 <p class="about_text">Мягкое, милое, нежное плюшевое авокадо можно использовать в качестве подушки, украшения для дивана или же просто как игрушку для ребёнка. Игрушка очень приятна на ощупь. Этот тропический плюшевый фрукт быстро станет вашим новым любимым другом! Он идеально подходит для обнимашек и вы не захотите его выпускать из своих объятий!</p>
-                <h4 class="about_subtitle">Характеристики и стоимость</h4>
-                <ul>
+                <h4 class="about_subtitle">Купить игрушку авокадо</h4>
+                <ul class="about_list_price">
                     <li><span class="about_price">20 см - <span class="red">870руб.</span> <del>1000руб</del></span></li>
                     <li><span class="about_price">20 см - <span class="red">870руб.</span> <del>1000руб</del></span></li>
                     <li><span class="about_price">20 см - <span class="red">870руб.</span> <del>1000руб</del></span></li>
@@ -54,10 +62,115 @@
                     <li><span class="about_price">20 см - <span class="red">870руб.</span> <del>1000руб</del></span></li>
                 </ul>
             </div>
-            <div class="about_slider"></div>
+            <div class="about_swiper swiper">
+                <!-- Additional required wrapper -->
+                <div class="about_swiper-wrapper swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="about_swiper-slide swiper-slide"><img src="images/slider1.jpg" alt=""></div>
+                    <div class="about_swiper-slide swiper-slide"><img src="images/slider2.jpg" alt=""></div>
+                    <div class="about_swiper-slide swiper-slide"><img src="images/slider3.jpg" alt=""></div>
+                    <div class="about_swiper-slide swiper-slide"><img src="images/slider4.jpg" alt=""></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="about_swiper-pagination swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="about_swiper-button-prev swiper-button-prev"></div>
+                <div class="about_swiper-button-next swiper-button-next"></div>
+            </div>
         </div>
     </div>
 </section>
 
+<section class="reviews">
+    <div class="container">
+        <div class="reviews-inner">
+            <div class="reviews_title">Отзывы</div>
+            <div class="reviews_swiper swiper">
+                <div class="reviews_swiper-wrapper swiper-wrapper">
+                    <div class="reviews_swiper-slide swiper-slide">
+                        <div class="reviews_slide-inner">
+                            <p>На вид очень симпатичный, позитивный, приятного желто-зелёного окраса. Создаёт весеннее настроение!
+                            Использовать как подушку-не советую, жестковат и толстоват))
+                            Но на ощупь очень приятный. Качество хорошее. По крайней мере, на первый взгляд. Форма ровная, прошит хорошо, нитки не торчат.
+                            Вот такой позитивный «фрукт» появился у нас в доме)
+                            Игрушка хорошая, ребёнок очень доволен и это главное)!
+                            Спасибо)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reviews_swiper-slide swiper-slide">
+                        <div class="reviews_slide-inner">
+                            <div class="reviews_swiper-slide-logo"></div>
+                            <p>На вид очень симпатичный, позитивный, приятного желто-зелёного окраса. Создаёт весеннее настроение!
+                            Использовать как подушку-не советую, жестковат и толстоват))
+                            Но на ощупь очень приятный. Качество хорошее. По крайней мере, на первый взгляд. Форма ровная, прошит хорошо, нитки не торчат.
+                            Вот такой позитивный «фрукт» появился у нас в доме)
+                            Игрушка хорошая, ребёнок очень доволен и это главное)!
+                            Спасибо)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="reviews_swiper-pagination swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="reviews_swiper-button-prev swiper-button-prev"></div>
+                <div class="reviews_swiper-button-next swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/swiper.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    const about_swiper = new Swiper('.about_swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        // loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.about_swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.about_swiper-button-next',
+          prevEl: '.about_swiper-button-prev',
+        },
+      });
+
+      const reviews_swiper = new Swiper('.reviews_swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        // loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.reviews_swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.reviews_swiper-button-next',
+          prevEl: '.reviews_swiper-button-prev',
+        },
+      });
+
+      //=== animation
+      ScrollReveal({
+        distance: '100px',
+        duration: 2000,
+        delay: 200
+      })
+
+      ScrollReveal().reveal('.about_title', {origin: 'top'});
+      ScrollReveal().reveal('.about_subtitle', {origin: 'left'});
+      ScrollReveal().reveal('.about_swiper, .about_text', {origin: 'right'});
+      ScrollReveal().reveal('.about_content', {origin: 'bottom'});
+</script>
 </body>
 </html>
