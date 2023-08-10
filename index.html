@@ -15,9 +15,9 @@
         <div class="header-inner">
             <h2 class="logo">Handy Shop</h2>
             <nav class="navbar">
-                <a class="navbar-link" href="#" style="--i:1;">О товаре</a>
-                <a class="navbar-link" href="#" style="--i:2;">Отзывы</a>
-                <a class="navbar-link" href="#" style="--i:3;">Заказать</a>
+                <a class="navbar-link" href="#about" style="--i:1;">О товаре</a>
+                <a class="navbar-link" href="#reviews" style="--i:2;">Отзывы</a>
+                <a class="navbar-link" href="#order" style="--i:3;">Заказать</a>
             </nav>
         </div>
     </div>
@@ -32,9 +32,9 @@
                 <div class="home_share">
                     <a href="#" class="home_share-item" style="--i:5;"><i class='bx bxl-facebook'></i></a>
                     <a href="#" class="home_share-item" style="--i:4;"><i class='bx bxl-instagram'></i></a>
-                    <a href="#" class="home_share-item" style="--i:3;"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://api.whatsapp.com/send/?text=https://dmitrygolub.pythonanywhere.com/" class="home_share-item" style="--i:3;"><i class='bx bxl-whatsapp'></i></a>
                     <a href="#" class="home_share-item" style="--i:2;"><i class='bx bxl-twitter' ></i></a>
-                    <a href="#" class="home_share-item" style="--i:1;"><i class='bx bxl-vk' ></i></a>
+                    <a href="https://vk.com/share.php?url=https://dmitrygolub.pythonanywhere.com/" class="home_share-item" style="--i:1;"><i class='bx bxl-vk' ></i></a>
                 </div>
                 <a class="home_link" href="#">Заказать</a>
             </div>
@@ -46,14 +46,14 @@
     
 </section>
 
-<section class="about">
+<section class="about" id="about">
     <div class="container">
-        <h3 class="about_title">О товаре</h3>
+        <h2 class="about_title">О товаре</h2>
         <div class="about-inner">
             <div class="about_content">
-                <h4 class="about_subtitle">Мягкая игрушка авокадо</h4>
+                <h3 class="about_subtitle">Мягкая игрушка авокадо</h4>
                 <p class="about_text">Мягкое, милое, нежное плюшевое авокадо можно использовать в качестве подушки, украшения для дивана или же просто как игрушку для ребёнка. Игрушка очень приятна на ощупь. Этот тропический плюшевый фрукт быстро станет вашим новым любимым другом! Он идеально подходит для обнимашек и вы не захотите его выпускать из своих объятий!</p>
-                <h4 class="about_subtitle">Купить игрушку авокадо</h4>
+                <h3 class="about_subtitle">Купить игрушку авокадо</h4>
                 <ul class="about_list_price">
                     <li><span class="about_price">20 см - <span class="red">870руб.</span> <del>1000руб</del></span></li>
                     <li><span class="about_price">20 см - <span class="red">870руб.</span> <del>1000руб</del></span></li>
@@ -82,15 +82,17 @@
     </div>
 </section>
 
-<section class="reviews">
+<section class="reviews" id="reviews">
     <div class="container">
         <div class="reviews-inner">
-            <div class="reviews_title">Отзывы</div>
+            <h2 class="reviews_title">Отзывы</h2>
             <div class="reviews_swiper swiper">
                 <div class="reviews_swiper-wrapper swiper-wrapper">
                     <div class="reviews_swiper-slide swiper-slide">
                         <div class="reviews_slide-inner">
-                            <p>На вид очень симпатичный, позитивный, приятного желто-зелёного окраса. Создаёт весеннее настроение!
+                            <div class="reviews_swiper-slide-logo"></div>
+                            <p class="reviews_swiper-slide-author">Владимер Беляев</p>
+                            <p class="reviews_swiper-slide-text">На вид очень симпатичный, позитивный, приятного желто-зелёного окраса. Создаёт весеннее настроение!
                             Использовать как подушку-не советую, жестковат и толстоват))
                             Но на ощупь очень приятный. Качество хорошее. По крайней мере, на первый взгляд. Форма ровная, прошит хорошо, нитки не торчат.
                             Вот такой позитивный «фрукт» появился у нас в доме)
@@ -102,7 +104,21 @@
                     <div class="reviews_swiper-slide swiper-slide">
                         <div class="reviews_slide-inner">
                             <div class="reviews_swiper-slide-logo"></div>
-                            <p>На вид очень симпатичный, позитивный, приятного желто-зелёного окраса. Создаёт весеннее настроение!
+                            <p class="reviews_swiper-slide-author">Владимер Беляев</p>
+                            <p class="reviews_swiper-slide-text">На вид очень симпатичный, позитивный, приятного желто-зелёного окраса. Создаёт весеннее настроение!
+                            Использовать как подушку-не советую, жестковат и толстоват))
+                            Но на ощупь очень приятный. Качество хорошее. По крайней мере, на первый взгляд. Форма ровная, прошит хорошо, нитки не торчат.
+                            Вот такой позитивный «фрукт» появился у нас в доме)
+                            Игрушка хорошая, ребёнок очень доволен и это главное)!
+                            Спасибо)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reviews_swiper-slide swiper-slide">
+                        <div class="reviews_slide-inner">
+                            <div class="reviews_swiper-slide-logo"></div>
+                            <p class="reviews_swiper-slide-author">Владимер Беляев</p>
+                            <p class="reviews_swiper-slide-text">На вид очень симпатичный, позитивный, приятного желто-зелёного окраса. Создаёт весеннее настроение!
                             Использовать как подушку-не советую, жестковат и толстоват))
                             Но на ощупь очень приятный. Качество хорошее. По крайней мере, на первый взгляд. Форма ровная, прошит хорошо, нитки не торчат.
                             Вот такой позитивный «фрукт» появился у нас в доме)
@@ -122,6 +138,38 @@
         </div>
     </div>
 </section>
+
+
+
+<section class="order" id="order">
+    <div class="container">
+        <h2 class="order_title">
+            Заказать
+        </h2>
+        <div class="order-inner">
+            <ul class="order_description">
+                <li class="order_description-item">
+                    Доставляем по всей России
+                </li>
+                <li class="order_description-item">
+                    Доставка осуществляется почтой России
+                </li>
+                <li class="order_description-item">
+                    После того как оставите заявку, ждите звонка в ближайшее время 
+                </li>
+            </ul>
+            <form class="order_form">
+                <input class="order_form-name" type="text" placeholder="ФИО">
+                <input type="phone" class="order_form-number" placeholder="Номер телефона">
+                <button type="submit" class="order_form-button">Заказть</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    © 2023 Копирование информации только с разрешения правообладателя.
+</footer>
 
 <script src="js/swiper.min.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
@@ -146,7 +194,7 @@
       const reviews_swiper = new Swiper('.reviews_swiper', {
         // Optional parameters
         direction: 'horizontal',
-        // loop: true,
+        loop: true,
       
         // If we need pagination
         pagination: {
@@ -161,16 +209,16 @@
       });
 
       //=== animation
-      ScrollReveal({
-        distance: '100px',
-        duration: 2000,
-        delay: 200
-      })
-
-      ScrollReveal().reveal('.about_title', {origin: 'top'});
-      ScrollReveal().reveal('.about_subtitle', {origin: 'left'});
-      ScrollReveal().reveal('.about_swiper, .about_text', {origin: 'right'});
-      ScrollReveal().reveal('.about_content', {origin: 'bottom'});
+//      ScrollReveal({
+//        distance: '100px',
+//        duration: 2000,
+//        delay: 200
+//      })
+//
+//      ScrollReveal().reveal('.about_title, .reviews_swiper-button-next, .reviews_swiper-button-prev, .reviews_title, .order_title', {origin: 'top'});
+//      ScrollReveal().reveal('.about_subtitle, .order_description', {origin: 'left'});
+//     ScrollReveal().reveal('.about_swiper, .about_text, .order_form', {origin: 'right'});
+//      ScrollReveal().reveal('.about_content', {origin: 'bottom'});
 </script>
 </body>
 </html>
